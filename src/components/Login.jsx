@@ -4,6 +4,8 @@ import access from './Images/Phone-Accessories-PNG-HD-Image-removebg-preview.png
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import google from './Images/images.png'
+import facebook from './Images/round-facebook-logo-isolated-white-background_469489-897.avif'
 const Login = () => {
   return (
     <div>
@@ -13,7 +15,7 @@ const Login = () => {
             <img src={bgimg} alt=""/>
         </div>
         {/* Navbar */}
-      <div className='flex flex-row justify-between px-20 py-4 absolute top-10 left-12 w-full z-10 '>
+      <div className='flex flex-row justify-between px-32 py-4 absolute top-10 left-0  w-full z-10 '>
         <h1 className='font-bold text-2xl'>
           Your Logo
         </h1>
@@ -42,6 +44,16 @@ const Login = () => {
                 <p className='mt-2'>Forgot password</p>
                 <button className='bg-lightred w-fit h-fit rounded-md text-center py-2 shadow-lg px-8 text-2xl text-white'>
             Login</button>
+            </div>
+            <div className='flex flex-row items-center justify-center gap-2'>
+  <hr className="flex-grow h-px bg-gray-200 border-0 dark:bg-gray-700" />
+  <p className="px-2 text-gray-500">or</p>
+  <hr className="flex-grow h-px bg-gray-200 border-0 dark:bg-gray-700" />
+</div>
+
+            <div className='flex flex-row items-center justify-center gap-5 rounded-xl '>
+              <img src={google} alt="" className='h-14 w-14'/>
+              <img src={facebook} alt="" className='h-10 w-10'/>
             </div>
             </div>
             <div className='w-1/2'>
